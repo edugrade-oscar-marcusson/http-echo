@@ -1,4 +1,5 @@
 using System.Text;
+using System.Text.RegularExpressions;
 
 public static class MapEchoWrapper
 {
@@ -77,6 +78,10 @@ public static class MapEchoWrapper
             var body = await reader.ReadToEndAsync(ct);
 
             request.Body.Position = 0;
+
+            if (!string.IsNullOrEmpty(body) && request.HasJsonContentType())
+                body = Regex.Unescape(body);
+
             return body;
         }
         return null;
