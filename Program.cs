@@ -1,4 +1,7 @@
+using System.Text;
 using Microsoft.AspNetCore.Connections;
+
+Console.OutputEncoding = Encoding.UTF8;
 
 ushort port = 8080;
 if (args.Length == 1)
