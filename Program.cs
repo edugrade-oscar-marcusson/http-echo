@@ -27,7 +27,7 @@ builder.Logging.SetMinimumLevel(LogLevel.None);
 builder.WebHost.ConfigureKestrel(options => options.ListenLocalhost(port));
 var app = builder.Build();
 
-app.MapGet("/", () => "Hello World!");
+app.MapEcho();
 
 try
 {
