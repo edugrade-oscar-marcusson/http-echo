@@ -2,7 +2,7 @@ using System.Text;
 
 public static class MapEchoWrapper
 {
-    static readonly Lock locker = new();
+    static readonly object locker = new();
 
     public static void MapEcho(this WebApplication app)
     {
