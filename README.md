@@ -8,6 +8,8 @@ från Javascript eller
 [HttpClient](https://learn.microsoft.com/en-us/dotnet/fundamentals/networking/http/httpclient)
 från C#.
 
+![Exempel](./readme-assets/http-echo.gif)
+
 ## Användning
 
 Programmet startas antingen rakt av eller med ett portnummer som argument. Om
