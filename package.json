@@ -1,0 +1,23 @@
+{
+  "name": "http-echo",
+  "version": "1.0.0",
+  "description": "En ASP.NET server som skriver ut den senaste HTTP requesten till terminalen.\r Detta är användbart för att kunna se vad exakt en klient skickar, exempelvis via\r [Postman](https://www.postman.com/), [cURL](https://curl.se/) eller kod som\r [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)\r från Javascript eller\r [HttpClient](https://learn.microsoft.com/en-us/dotnet/fundamentals/networking/http/httpclient)\r från C#.",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build.js",
+    "install": "node build.js install",
+    "uninstall": "node build.js uninstall"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edugrade-oscar-marcusson/http-echo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/edugrade-oscar-marcusson/http-echo/issues"
+  },
+  "homepage": "https://github.com/edugrade-oscar-marcusson/http-echo#readme"
+}
